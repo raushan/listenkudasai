@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
+        <div id="video-embed" class="embed-responsive embed-responsive-4by3"><!-- yt vid gets put here via js --></div>
+        <p class="browsing-info text-center info"></p>
+        <p class="text-center hide js-no-vids info">No videos were found, please try submitting one :) </p>
+        <p class="text-center hide js-no-vids-adv info">No videos were found within the seleceted categories</p>
+        <div class="text-center">
+          <a  href="#" class="btn btn-default js-watch-button">Watch random video</a>
+          <a  href="#" class="btn btn-default js-show-advanced-search">Advanced Search</a>
+          <form action="/report" method="post" class="report-form pull-right js-report-vid">
+            <input type="hidden" value="" name="video_id">
+            <button type="submit" class="button-icon pull-right">
+              <i class="glyphicon glyphicon-exclamation-sign" data-toggle="tooltip" title="Report this video"></i>
+            </button>
+          </form>
+        </div>
+      </div><!-- end col-->
+    </div><!-- end row -->
+  </div>
+  {% include "partials/advanced_search.html" %}
+  {% include "partials/submit_form.html" %}
+{% endblock %}

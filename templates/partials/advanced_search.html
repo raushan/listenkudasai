@@ -1,0 +1,55 @@
+<div id="advanced-search-form" class="hide">
+  <div class="container">
+    <div class="row text-center">
+      <div class="">
+        <h2 class="inline-headers">Advanced Search</h2>
+        <h4 class="inline-headers">Select the categories you want to search:</h4>
+      </div>
+    </div><!-- end row -->
+
+    <form action="/advanced" method="post" id="advancedform" class="control-group advform" role="form">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-2 col-xs-offset-4 col-md-offset-4-half">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Music"/>  Music</label><br/>
+          </div>
+          <div class="col-sm-2 col-xs-offset-4 col-sm-offset-0">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Drama"/>  Drama</label><br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-xs-offset-4 col-md-offset-4-half">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="News"/>  News</label><br/>
+          </div>
+          <div class="col-sm-2 col-xs-offset-4 col-sm-offset-0">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Other"/>  Other</label><br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-xs-offset-4 col-md-offset-4-half">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Technology"/>  Technology</label><br/>
+          </div>
+          <div class="col-sm-2 col-xs-offset-4 col-sm-offset-0">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Video Games"/>  Video Games</label><br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-xs-offset-4 col-md-offset-4-half">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Anime"/>  Anime</label><br/>
+          </div>
+          <div class="col-sm-2 col-xs-offset-4 col-sm-offset-0">
+            <label class="checkbox-inline"><input type="checkbox" class="searchgenre" name="searchgenre" value="Lifestyle"/>  Lifestyle</label><br/>
+          </div>
+        </div>
+      </div><!-- end form group-->
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <input type="submit" class ="btn btn-default btn-block js-submit-advanced" value="Search these categories">
+          <div class="text-center">
+            <a href="#" class="js-clear-advanced">clear advanced search</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div> <!-- end container-->
+</div>

@@ -1,0 +1,53 @@
+.hide{
+  display: none;
+}
+
+#video-embed{
+  margin-bottom: 3px;
+}
+
+html,body{
+  height: 100%;
+}
+.navbar{
+  margin-bottom:0;
+}
+.container.wrapper{
+  min-height: 100%;
+  padding-top: 5px;
+  border-style:solid;
+  border-color:#f4f4f4;
+  border-width: 0 1px 0 1px;
+}
+.required{
+  color: red;
+}
+@media (min-width: 992px){
+  .col-md-offset-4-half{
+    margin-left: 37.5%;
+  }
+}
+.info{
+  color:blue;
+}
+.navbar-brand small {
+  display:block;
+  font-size:10px;
+}
+.navbar-brand {
+  line-height:12px;
+  padding-top:20px;
+  padding-bottom:5px;
+}
+.glyphicon.glyphicon-exclamation-sign{
+  cursor: pointer;
+}
+.button-icon{
+  background:none;
+  border:none;
+  padding:0;
+  outline: none;
+}
+.report-form{
+  display:inline-block;
+}

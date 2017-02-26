@@ -1,0 +1,45 @@
+<div id ="submit-form-modal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"> Submit a Video</h4>
+        <p>Please submit a video with Japanese content and no English subtitles.</p>
+      </div>
+      <div class="modal-body">
+        <form action="/submit" method="post" class="form-horizontal js-submit-form" role="form">
+          <div class="form-group">
+            <label for="urlinput" class="col-sm-2 control-label"><span class="required">*</span>Video Link:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="urlinput" id="urlinput" placeholder="www.youtube.com/watch?v=dQw4w9WgXcQ">
+            </div>
+          </div>
+
+          <div class="form-group hide"><!-- may get rid of tag thing.. -->
+            <label for="tagsinput" class="col-sm-2 control-label">Tags:</label>
+            <div class="col-sm-10">
+              <!--
+              <input type="text" class="form-control" name="tags" id="tagsinput" placeholder="guitar,akb48,tokyo">
+              -->
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="catsinput" class="col-sm-2 control-label"><span class="required">*</span>Categories:</label>
+            <div id="catsinput" class="col-sm-offset-2 col-sm-10">
+              <label><input type="checkbox" name="ingenre" value="Music"/>  Music</label></br>
+              <label><input type="checkbox" name="ingenre" value="Drama"/>  Drama</label></br>
+              <label><input type="checkbox" name="ingenre" value="Technology"/>  Technology</label></br>
+              <label><input type="checkbox" name="ingenre" value="Video Games"/>  Video Games</label></br>
+              <label><input type="checkbox" name="ingenre" value="News"/>  News</label></br>
+              <label><input type="checkbox" name="ingenre" value="Anime"/>  Anime</label></br>
+              <label><input type="checkbox" name="ingenre" value="Lifestyle"/>  Lifestyle</label></br>
+              <label><input type="checkbox" name="ingenre" value="Other"/>  Other</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary col-sm-offset-2 js-submit-vid-button">Submit</button>
+        </form>
+      </div><!-- modal-body -->
+    </div><!-- modal content -->
+  </div><!-- modal dialog -->
+</div>
